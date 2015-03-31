@@ -7,7 +7,9 @@ gems:
   test:
     - cucumber
     - capybara
+    - guard
     - guard-cucumber
+    - pry
 
   test_require_false:
     - cucumber-api-steps
@@ -16,13 +18,16 @@ files:
   Gemfile:
   Rakefile:
   Procfile:
+  Guardfile:
   .ruby-version:
   config.ru:
   # the template has this name
   features/first.feature:
-    # but the output file substitutes it like this, where path is an attribute
+    # but the output file substitutes it like this, where wormname is an attribute
     # on the Generator object
-    outpath: first/path
+    outpath: first/wormname
+  features/step_definitions/app_steps.rb:
+    outpath: app/wormname
   features/support/env.rb:
   lib/app.rb:
-    outpath: app/path
+    outpath: app/wormname

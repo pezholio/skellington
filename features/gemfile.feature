@@ -19,7 +19,9 @@ Feature: Generate skellington
     group :test do
       gem 'cucumber'
       gem 'capybara'
+      gem 'guard'
       gem 'guard-cucumber'
+      gem 'pry'
       gem 'cucumber-api-steps', require: false
     end
     """
